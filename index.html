@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste - The Most Delicious Food</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span>Taste</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-key="nav_home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-key="nav_about">About Us</a></li>
+                    <li><a href="#menu" class="nav-link" data-key="nav_menu">Menu</a></li>
+                    <li><a href="#services" class="nav-link" data-key="nav_services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-key="nav_contact">Contact Us</a></li>
+                </ul>
+                <button class="nav-close" id="nav-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="nav-buttons">
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-checkbox"><input type="checkbox" id="theme-checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>
+                <button id="lang-switcher" class="lang-btn">ع</button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-container container">
+                <div class="home-text">
+                    <span class="subtitle" data-key="hero_subtitle">Welcome to Taste</span>
+                    <h1 class="title" id="typed-text"></h1>
+                                        <p class="description" data-key="hero_description">We offer you the most delicious meals, prepared
+                        with great care from the freshest ingredients.</p>
+                    <div class="home-btns">
+                        <a href="#menu" class="btn primary-btn"><span data-key="hero_btn_menu">Browse Menu</span><i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#" class="btn secondary-btn" id="order-now"><span data-key="hero_btn_order">Order
+                                Now</span><i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="home-img"><img src="img/home.png" alt="Tasty Burger"></div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-container container">
+                <div class="about-img"><img src="img/about.jpg" alt="Our Restaurant"></div>
+                <div class="about-text">
+                    <span class="subtitle" data-key="about_subtitle">About Us</span>
+                    <h2 class="title" data-key="about_title">We Serve The Best<br>& Freshest Food</h2>
+                    <p class="description" data-key="about_description">At Taste, we pride ourselves on providing the
+                        best dining experience. We use the finest fresh ingredients and follow the highest quality
+                        standards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="heading container">
+                <span class="subtitle" data-key="services_subtitle">Our Services</span>
+                <h2 class="title" data-key="services_title">We Provide The Best Services</h2>
+            </div>
+            <div class="services-container container">
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-utensils"></i></div>
+                    <h3 data-key="service1_title">Quality Food</h3>
+                    <p data-key="service1_desc">We use the finest and freshest ingredients to prepare our meals.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <h3 data-key="service2_title">Fast Delivery</h3>
+                    <p data-key="service2_desc">We guarantee your order arrives as quickly as possible.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon"><i class="fas fa-headset"></i></div>
+                    <h3 data-key="service3_title">Continuous Support</h3>
+                    <p data-key="service3_desc">Our customer service team is always available to answer your inquiries.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="heading container">
+                <span class="subtitle" data-key="menu_subtitle">Our Menu</span>
+                <h2 class="title" data-key="menu_title">Our Signature Meals</h2>
+            </div>
+            <div class="menu-container container">
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="burgers">Burgers</button>
+                    <button class="category-btn" data-category="pizza">Pizza</button>
+                    <button class="category-btn" data-category="drinks">Drinks</button>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger2.jpg" alt="Classic Burger"></div>
+                        <div class="item-content">
+                            <h3>Classic Burger</h3>
+                            <p>A flame-grilled pure beef patty, the original way (Single).</p><span class="price">85
+                                EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger3.jpg" alt="Original Cheeseburger"></div>
+                        <div class="item-content">
+                            <h3>Original Cheeseburger</h3>
+                            <p>The classic beef burger with a rich slice of cheddar cheese (Single).</p><span
+                                class="price">90 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger5.jpg" alt="Chicken Supreme Burger"></div>
+                        <div class="item-content">
+                            <h3>Chicken Supreme Burger</h3>
+                            <p>Crispy chicken breast with bacon, cheese, and mushrooms (Single).</p><span
+                                class="price">115 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger6.jpg" alt="Spicy Chicken Burger"></div>
+                        <div class="item-content">
+                            <h3>Spicy Chicken Burger</h3>
+                            <p>Two pieces of crispy chicken with a special spicy mix (Double).</p><span
+                                class="price">125 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger1.jpg" alt="The Monster Burger"></div>
+                        <div class="item-content">
+                            <h3>The Monster Burger</h3>
+                            <p>Two pure Angus beef patties with our special Taste sauce (Double).</p><span
+                                class="price">145 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger4.jpg" alt="Triple Cheeseburger"></div>
+                        <div class="item-content">
+                            <h3>Triple Cheeseburger</h3>
+                            <p>Three layers of beef and cheese with crispy bacon strips (Triple).</p><span
+                                class="price">165 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-img"><img src="./img/burger7.jpg" alt="The Tower Burger"></div>
+                        <div class="item-content">
+                            <h3>The Tower Burger</h3>
+                            <p>The burger challenge: layers of grilled beef and crispy chicken (Triple).</p><span
+                                class="price">180 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pizza">
+                        <div class="item-img"><img src="./img/pizza3.jpg" alt="Margherita Pizza"></div>
+                        <div class="item-content">
+                            <h3>Margherita Pizza (Small)</h3>
+                            <p>Italian simplicity: fresh tomato sauce, mozzarella, and basil leaves.</p><span
+                                class="price">110 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pizza">
+                        <div class="item-img"><img src="./img/pizza1.jpg" alt="Chicken Ranch Pizza"></div>
+                        <div class="item-content">
+                            <h3>Chicken Ranch Pizza (Medium)</h3>
+                            <p>Grilled chicken pieces with rich ranch sauce and mozzarella cheese.</p><span
+                                class="price">150 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="pizza">
+                        <div class="item-img"><img src="./img/pizza2.jpg" alt="Pepperoni Pizza"></div>
+                        <div class="item-content">
+                            <h3>Pepperoni Pizza (Large)</h3>
+                            <p>A classic layer of pepperoni with Italian tomato sauce and cheese.</p><span
+                                class="price">175 EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-img"><img src="./img/Orange juice.jpg" alt="Sunrise Cocktail"></div>
+                        <div class="item-content">
+                            <h3>Sunrise Cocktail</h3>
+                            <p>Fresh orange juice with a hint of aromatic rosemary flavor.</p><span class="price">55
+                                EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-img"><img src="./img/Mojito drink.jpg" alt="Sparkling Lemonade"></div>
+                        <div class="item-content">
+                            <h3>Sparkling Lemonade</h3>
+                            <p>A refreshing mix of fresh lemon juice with sparkling water.</p><span class="price">45
+                                EGP</span>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-img"><img src="./img/Water-bottle.jpg" alt="Mineral Water"></div>
+                        <div class="item-content">
+                            <h3>Mineral Water</h3>
+                            <p>Pure natural mineral water (Small).</p><span class="price">20 EGP</span>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact" id="contact">
+        <div class="contact-container container">
+            <div class="contact-box address">
+                <h3 data-key="footer_contact_title">Contact Info</h3>
+                <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Sohag, Egypt</span></div>
+                <div class="info-item"><i class="fas fa-phone"></i><span>+201154937132</span></div>
+                <div class="info-item"><i class="fas fa-envelope"></i><span>info@taste.com</span></div>
+            </div>
+            <div class="contact-box links">
+                <h3 data-key="footer_links_title">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-key="nav_home">Home</a></li>
+                    <li><a href="#about" data-key="nav_about">About Us</a></li>
+                    <li><a href="#menu" data-key="nav_menu">Menu</a></li>
+                </ul>
+            </div>
+            <div class="contact-box info">
+                <h3 data-key="footer_brand_title">Taste</h3>
+                <div class="social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <p data-key="copyright_text">&copy; 2024 All rights reserved - Designed & Developed by Khalid Abd Elhamid
+            </p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
