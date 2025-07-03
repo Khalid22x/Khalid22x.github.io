@@ -1,42 +1,10 @@
 /*=============== BASE SETUP & NAVBAR ===============*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close'),
-      navLinks = document.querySelectorAll('.nav-link'),
-      header = document.querySelector('.header');
-
+const e=document.getElementById('nav-menu'),c=document.getElementById('nav-toggle'),n=document.getElementById('nav-close'),o=document.querySelectorAll('.nav-link'),t=document.querySelector('.header');
 // Show & Hide Mobile Menu
-if(navToggle) {
-   navToggle.addEventListener('click', () => navMenu.classList.add('active'));
-}
-if(navClose) {
-   navClose.addEventListener('click', () => navMenu.classList.remove('active'));
-}
-navLinks.forEach(n => n.addEventListener('click', () => navMenu.classList.remove('active')));
-
+if(c){c.addEventListener('click',()=>e.classList.add('active'))}if(n){n.addEventListener('click',()=>e.classList.remove('active'))}o.forEach(c=>c.addEventListener('click',()=>e.classList.remove('active')));
 // Header Shadow on Scroll
-window.addEventListener('scroll', () => {
-   header.classList.toggle('scroll-header', window.scrollY >= 50);
-});
-
-/*=============== MENU FILTER ===============*/
-const menuCategories = document.querySelectorAll('.category-btn');
-const menuItems = document.querySelectorAll('.menu-item');
-
-menuCategories.forEach(button => {
-    button.addEventListener('click', () => {
-        menuCategories.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        const filterCategory = button.dataset.category;
-        menuItems.forEach(item => {
-            if (filterCategory === 'all' || item.dataset.category === filterCategory) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    });
-});
+window.addEventListener('scroll',()=>{t.classList.toggle('scroll-header',window.scrollY>=50)});
+/*=============== MENU FILTER ===============*/const i=document.querySelectorAll('.category-btn');const l=document.querySelectorAll('.menu-item');i.forEach(c=>{c.addEventListener('click',()=>{i.forEach(c=>c.classList.remove('active'));c.classList.add('active');const e=c.dataset.category;l.forEach(c=>{if(e==='all'||c.dataset.category===e){c.style.display='block'}else{c.style.display='none'}})})});
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
